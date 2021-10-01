@@ -134,19 +134,34 @@ window.onload=function(){
     </table>
 		</div>
 		<div id="idSubPart_pb" class="alternativeSubPart">
-			<label>a:</label><input id="txtA" /><br/>
-			<label>b:</label><input id="txtB" /><br/>
-			<input type="button" value="addition" 
-				   onclick="calculAdd()"/><br/>
-			<label>a+b: </label> <span id="resAdd"></span>
-			<hr/>
-			<label>ht:</label><input id="txtHt" /><br/>
-			<label>taux tva (%):</label><input id="txtTauxTvaPct" /><br/>
-			<input type="button" value="calculer tva et ttc" 
-				   onclick="calculTvaEtTtc()"/><br/>
-			<label>tva: </label> <span id="spanTva"></span><br/>
-			<label>ttc: </label> <span id="spanTtc"></span><br/>
-   </div>
+          <div class="row">
+		  <div class="col-sm-6 p-4">
+			<div class="card">
+				<div class="card-header bg-primary text-light">addition</div>
+				<div class="card-body">
+					<label>a:</label><input id="txtA" /><br/>
+					<label>b:</label><input id="txtB" /><br/>
+					<input type="button" value="addition" 
+						onclick="calculAdd()"/><br/>
+					<label>a+b: </label> <span id="resAdd"></span>
+			    </div>
+		   </div><!-- fin de card pour addition-->
+		</div>
+		<div class="col-sm-6 p-4">
+		   <div class="card">
+			   <div class="card-header bg-primary text-light">tva</div>
+			   <div class="card-body">
+					<label>ht:</label><input id="txtHt" /><br/>
+					<label>taux tva (%):</label><input id="txtTauxTvaPct" /><br/>
+					<input type="button" value="calculer tva et ttc" 
+						onclick="calculTvaEtTtc()"/><br/>
+					<label>tva: </label> <span id="spanTva"></span><br/>
+					<label>ttc: </label> <span id="spanTtc"></span>
+				</div>
+			</div><!-- fin de card pour tva -->
+		</div>
+		</div> <!-- fin de row dans partie B-->
+	 </div><!-- fin de  partie B-->
 	  </section>
    </main>
    <footer class="stickyFooter">
