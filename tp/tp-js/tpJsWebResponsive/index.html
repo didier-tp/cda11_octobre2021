@@ -13,6 +13,7 @@
  <script src="js/my_ajax_util.js"></script>
  <script src="js/my_switch_div.js"></script>
  <script src="js/dom_crud_devise.js"></script>
+ <script src="js/calculs.js"></script>
 <script>
 
 
@@ -133,8 +134,19 @@ window.onload=function(){
     </table>
 		</div>
 		<div id="idSubPart_pb" class="alternativeSubPart">
-		 pb ...
-		</div>
+			<label>a:</label><input id="txtA" /><br/>
+			<label>b:</label><input id="txtB" /><br/>
+			<input type="button" value="addition" 
+				   onclick="calculAdd()"/><br/>
+			<label>a+b: </label> <span id="resAdd"></span>
+			<hr/>
+			<label>ht:</label><input id="txtHt" /><br/>
+			<label>taux tva (%):</label><input id="txtTauxTvaPct" /><br/>
+			<input type="button" value="calculer tva et ttc" 
+				   onclick="calculTvaEtTtc()"/><br/>
+			<label>tva: </label> <span id="spanTva"></span><br/>
+			<label>ttc: </label> <span id="spanTtc"></span><br/>
+   </div>
 	  </section>
    </main>
    <footer class="stickyFooter">
