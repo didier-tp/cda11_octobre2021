@@ -134,21 +134,23 @@ window.onload=function(){
     </table>
 		</div>
 		<div id="idSubPart_pb" class="alternativeSubPart">
-		  <div class="m-2 p-1">
-			<ul class="nav nav-pills"> <!-- nav-tabs or nav-pills -->
-				<li class="nav-item"><a class="nav-link active" href="#id_tab_add" data-toggle="tab">addition</a></li>
-				<li class="nav-item" ><a class="nav-link" href="#id_tab_tva" data-toggle="tab">calcul tva</a></li>
-				
-		    </ul>
-			<div class="tab-content">
-				<div id="id_tab_add" class="tab-pane container-fluid show active container p-1 border border-primary">
+          <div class="row">
+			<div class="col-sm-6 p-4">
+				<div class="card">
+					<div class="card-header bg-primary text-light">addition</div>
+					<div class="card-body">
 						<label>a:</label><input id="txtA" /><br/>
 						<label>b:</label><input id="txtB" /><br/>
 						<input type="button" value="addition" 
 							onclick="calculAdd()"/><br/>
 						<label>a+b: </label> <span id="resAdd"></span>
-				</div>
-				<div id="id_tab_tva" class="tab-pane container-fluid container p-1 border border-primary">
+					</div>
+			</div><!-- fin de card pour addition-->
+		</div>
+		<div class="col-sm-6 p-4">
+		   <div class="card">
+			   <div class="card-header bg-primary text-light">tva</div>
+			   <div class="card-body">
 					<label>ht:</label><input id="txtHt" /><br/>
 					<label>taux tva (%):</label><input id="txtTauxTvaPct" /><br/>
 					<input type="button" value="calculer tva et ttc" 
@@ -156,7 +158,7 @@ window.onload=function(){
 					<label>tva: </label> <span id="spanTva"></span><br/>
 					<label>ttc: </label> <span id="spanTtc"></span>
 				</div>
-		    </div> <!-- fin tab-content -->
+			</div><!-- fin de card pour tva -->
 		</div>
 		</div> <!-- fin de row dans partie B-->
 	 </div><!-- fin de  partie B-->
