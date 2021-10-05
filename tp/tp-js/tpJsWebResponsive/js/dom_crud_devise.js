@@ -30,7 +30,7 @@ function startDomCrudDevise(){
         tabDevises.push({code:'JPY' , nom : 'Yen' , change : 123.45})
         firstInit=false;
     }
-
+  
     zoneBodyTableau.innerHTML=""; //RAZ
     for(i=0;i<tabDevises.length;i++){
             addDeviseRow(tabDevises[i]);
@@ -39,6 +39,7 @@ function startDomCrudDevise(){
     document.getElementById("bntUpdate").disabled = true; 
     document.getElementById("bntDelete").disabled = true; 
     reInitEmptyDevise();
+  
 }
 
 function readDevise(devise){
