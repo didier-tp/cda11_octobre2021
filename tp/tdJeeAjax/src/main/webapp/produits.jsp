@@ -28,5 +28,7 @@
      </table> 
     <hr/>
     date=<%=new java.util.Date()%>
+    <br/>
+    <a href="page2.jsp">vers page 2 (jsp)</a>
 </body>
 </html>
